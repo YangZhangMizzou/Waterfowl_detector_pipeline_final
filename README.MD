@@ -14,7 +14,7 @@ In this demo, some images are included for testing, under folder **example_image
 ### Clone the repository
 You can either use the cmd window to clone the repo using the following command
 ```
-git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline.git
+git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.git
 ```
 
 ### Create virtual environment
