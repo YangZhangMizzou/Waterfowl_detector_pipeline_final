@@ -98,10 +98,6 @@ You can easily run all experiments on drone_collection dataset(all height, habit
 ```
 python multi_inference.py
 ```
-4. run the following command to do detection and classification test:
-```
-python multi_inference_classification.py
-```
 
 The inference may take a long time. Please be patient.
 
