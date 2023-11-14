@@ -159,6 +159,16 @@ Sorted in condifence descending order.
 ![Screenshot from 2022-11-01 15-59-13](https://user-images.githubusercontent.com/71574752/199340134-13dc5f02-4980-4bac-9a6a-4a5d6a04050e.png)
 
 
-## Details and metrics
+## Details and metrics:
+When user choose to detect waterfowl only, the visualize of result should like this.
+![I_DJI_0261](https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final/assets/47132186/65b4ada5-ddce-483b-814e-e7c0d4473ffe)
+Where we use rectangle to represent TP, triangle to represent FP and oval to represent FN.
+
+When user choose to detect and classify waterfowl, the visualize of result should like this.
+![DJI_0055](https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final/assets/47132186/c5d5778b-369b-4071-a3e3-a6c41ff36cdb)
+Where we use blue rectangle to represent TP with correct class prediction while green rectangle to represent TP with incorrect class prediction
+
+
+
 
 
