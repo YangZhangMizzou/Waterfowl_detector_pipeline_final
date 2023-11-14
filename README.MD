@@ -3,8 +3,7 @@
 This code is an demo only on how to apply retinanet,yolov5 and FasterRCNN onto the Waterfowl dataset. In this demo, pretrained general models of three detectors are provided and can be downloaded here https://drive.google.com/file/d/1Rgbn9JvzJb1vVu_l-l2D0g5R0-Vj3EXt/view?usp=sharing . Download and extract its content to folder 'checkpoints'.
 
 ## System requirements
-Support both Windows system and Linux system, can be used with/without cuda environement.
-Tested in Ubuntu 18 with python=3.8,3.10, Windows with python=3.10
+Support only Linux ubuntu system, can be used with cuda environement.Tested in Ubuntu 18 with python=3.8
 
 ## Example images
 
