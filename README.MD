@@ -32,11 +32,16 @@ We recommend to install pytorch with cuda to accelerate running speed.
 ```
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
-### Install dependency for models
+### Install basic dependency
 
-Just run this command and all set for our detection and classification models
 ```
-pip install -r requirements.txt
+pip install pandas
+pip install numpy
+pip install opencv-python
+pip install tqdm
+pip install efficientnet_pytorch
+pip install resnet_pytorch
+pip install scikit-learn
 ```
 
 ### Install dependency for FasterRCNN
@@ -44,6 +49,36 @@ pip install -r requirements.txt
 Install Detectron2 following the instructions on the website. https://detectron2.readthedocs.io/en/latest/index.html
 and then run the following command
 
+
+### Install dependency for YOLOV5
+
+Just run this command and all set for YOLOV5
+```
+pip install -r requirements.txt
+```
+
+### Install dependency for Retinanet
+
+```
+pip install opencv-contrib-python
+pip install Pillow==9.5
+pip install pyexiv2
+pip install matplotlib
+pip install -i https://test.pypi.org/simple/ WaterFowlTools
+pip install packaging
+pip install kiwisolver
+pip install cycler
+```
+
+
+### Install dependency for YoloNAS and MixMatch
+
+```
+pip install super-gradients==3.1.0
+pip install setuptools==59.5.0
+pip install tensorboardX
+pip install progress
+```
 
 ## input format
 This script requires a speical format of input describes below
