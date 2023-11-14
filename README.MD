@@ -159,3 +159,6 @@ Sorted in condifence descending order.
 ![Screenshot from 2022-11-01 15-59-13](https://user-images.githubusercontent.com/71574752/199340134-13dc5f02-4980-4bac-9a6a-4a5d6a04050e.png)
 
 
+## Details and metrics
+
+
