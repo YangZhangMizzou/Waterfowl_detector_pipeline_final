@@ -46,9 +46,9 @@ pip install scikit-learn
 
 ### Install dependency for FasterRCNN
 
-Install Detectron2 following the instructions on the website. https://detectron2.readthedocs.io/en/latest/index.html
-and then run the following command
-
+```
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+```
 
 ### Install dependency for YOLOV5
 
