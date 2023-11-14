@@ -74,7 +74,7 @@ pip install cycler
 ### Install dependency for YoloNAS and MixMatch
 
 ```
-pip install super-gradients==3.1.0
+pip install super-gradients==3.1.3
 pip install setuptools==59.5.0
 pip install tensorboardX
 pip install progress
