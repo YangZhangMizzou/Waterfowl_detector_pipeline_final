@@ -23,7 +23,7 @@ Virtual env is recommended to be used in order to install the package, here Anac
 ```
 conda create -n torch_py3 python==3.8
 conda activate torch_py3
-cd Waterfowl_detector_pipeline
+cd Waterfowl_detector_pipeline_final
 ```
 
 ### Install pytorch
