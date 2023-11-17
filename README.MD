@@ -98,6 +98,7 @@ You can easily run all experiments on the drone_collection dataset (all heights,
 
 ## Run the Scripts:
 Once you have the input file ready and the correct virtual environment set up, you can use the file inference_image_height.py to start inferring the images. Here's a quick example of the full command:
+
 ```
 python inference_image_height.py \
 --det_model retinanet \
@@ -108,6 +109,8 @@ python inference_image_height.py \
 ```
 
 if you want to run waterfowl dectection and classification together:
+
+```
 python inference_image_height.py \
 --det_model retinanet \
 --cla_model mixmatch \
@@ -116,7 +119,6 @@ python inference_image_height.py \
 --out_dir ./result/retinanet_mixmatch/Bird_G_UAV_TestTrain \
 --evaluate True \
 ```
-
 
 The description of each command are as follows:
 ```
