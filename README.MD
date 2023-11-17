@@ -94,22 +94,27 @@ You can easily run all experiments on the drone_collection dataset (all heights,
 
 1. Download [example_images.zip](https://drive.google.com/file/d/1nwzvAKL_fBVeFviAeDub3tpSmx-p_3ME/view?usp=share_link) and then extract all subfolders to **example_images** folder. 
 2. Download [checkpoints.zip](https://drive.google.com/file/d/1gCochdduiTb7sxrAkGTR-DS_YZTEmbLi/view?usp=drive_link) and then extract all subfolders to **checkpoint** folder 
-3. change directory to Waterfowl_detector_pipeline and run:
-```
-python multi_inference.py
-```
-
-The inference may take a long time. Please be patient.
+3. change directory to Waterfowl_detector_pipeline and run your customized commands(The inference may take a long time. Please be patient).
 
 ## Run the Scripts:
 Once you have the input file ready and the correct virtual environment set up, you can use the file inference_image_height.py to start inferring the images. Here's a quick example of the full command:
 ```
 python inference_image_height.py \
 --det_model retinanet \
---image_root ./example_images/Bird_A \
---image_ext jpg \
---out_dir ./result/retinanet/Bird_A \
---evaluate False \
+--image_root ./example_images/Bird_G_UAV_TestTrain \
+--image_ext JPG \
+--out_dir ./result/retinanet/Bird_G_UAV_TestTrain \
+--evaluate True \
+```
+
+if you want to run waterfowl dectection and classification together:
+python inference_image_height.py \
+--det_model retinanet \
+--cla_model mixmatch \
+--image_root ./example_images/Bird_G_UAV_TestTrain \
+--image_ext JPG \
+--out_dir ./result/retinanet_mixmatch/Bird_G_UAV_TestTrain \
+--evaluate True \
 ```
 
 
