@@ -106,7 +106,9 @@ python inference_image_height.py \
 --image_ext JPG \
 --out_dir ./result/retinanet/Bird_G_UAV_TestTrain \
 --evaluate True \
+
 ```
+
 
 if you want to run waterfowl dectection and classification together:
 
