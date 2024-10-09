@@ -1,6 +1,6 @@
 # Waterfowl Detector Pipeline Instructions
 
-This code serves as a demo showcasing the application of waterfowl detectors (RetinaNet, YOLOv5, FasterRCNN, and YoloNAS) and a waterfowl classifier (Res18 and MixMatch) on the Waterfowl dataset.
+This code implements showcasing the application of waterfowl detectors (RetinaNet, YOLOv5, FasterRCNN, and YoloNAS) and waterfowl classifiers (Res18 and MixMatch) on the Waterfowl dataset.
 
 ## System requirements
 Support is available only for the Linux Ubuntu system, and it can be used within a CUDA environment. It has been tested in Ubuntu 18 with Python 3.8.
