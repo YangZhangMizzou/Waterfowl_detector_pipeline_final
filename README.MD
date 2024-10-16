@@ -13,7 +13,7 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 ### Install CUDA
 
-This software support cuda to accelerate inference speed. CUDA installation is recommended. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.
+This software support cuda to accelerate inference speed. CUDA installation is recommended. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.This software has been tested working with cuda 11.2 and 10.0
 
 https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
 
