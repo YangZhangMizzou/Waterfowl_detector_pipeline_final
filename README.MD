@@ -1,21 +1,32 @@
 # Waterfowl Detector Pipeline Instructions
 
-This code implements showcasing the application of waterfowl detectors (RetinaNet, YOLOv5, FasterRCNN, and YoloNAS) and waterfowl classifiers (Res18 and MixMatch) on the Waterfowl dataset.
+This code implements local waterfowl detectors (RetinaNet, YOLOv5, FasterRCNN, and YoloNAS) and waterfowl classifiers (Res18 and MixMatch) which are pretrained by waterfowl datasets collected by Missouri Department of Conservation and University of Missouri,Columbia
 
 ## System requirements
-Support is available only for the Linux Ubuntu system, and it can be used within a CUDA environment. It has been tested in Ubuntu 18 with Python 3.8.
+Support is available for the Linux Ubuntu system and Windows system, It has been tested in Ubuntu 18, 20.4 and windows 10 and 11.
 
 ## Example images
 
-This demo includes various images for testing. The example_images folder contains different images for each corresponding pre-trained model, organized by their folder names (Bird_A, Bird_B, etc.), along with the attached Ground Truth (GT) file for later evaluation.
+All Example images can be downloaded from [example_images.zip](https://drive.google.com/file/d/1GpPj6GQl_-oaCb7y-YwId4sUjyLDvipQ/view?usp=sharing). Download and  extract all subfolders to **example_images** folder. 
 
 ## Installation
 
+### Install CUDA
+
+This software support cuda to accelerate inference speed. CUDA installation is recommended. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.
+
+https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
+
 ### Clone the repository
+Git should be firstly installed to download the code to local. You can follow [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git to your operating system.
 You can use the command line to clone the repository:
 ```
 git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.git
 ```
+
+### Install Anaconda
+
+Anaconda is recommended to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/)
 
 ### Create virtual environment
 Using a virtual environment is recommended for installing the package. Anaconda is recommended for this purpose. After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
@@ -25,6 +36,7 @@ conda create -n torch_py3 python==3.8
 conda activate torch_py3
 cd Waterfowl_detector_pipeline_final
 ```
+
 
 ### Install pytorch
 
