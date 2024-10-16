@@ -96,9 +96,9 @@ Once you have the input file ready and the correct virtual environment set up, y
 ```
 python inference_image_height.py \
 --det_model retinanet \
---image_root ./example_images/Bird_G_UAV_TestTrain \
+--image_root ./example_images/Bird_A \
 --image_ext JPG \
---out_dir ./result/retinanet/Bird_G_UAV_TestTrain \
+--out_dir ./result/retinanet/Bird_A \
 
 ```
 
@@ -108,9 +108,9 @@ if you want to run waterfowl dectection and classification together:
 python inference_image_height.py \
 --det_model retinanet \
 --cla_model mixmatch \
---image_root ./example_images/Bird_G_UAV_TestTrain \
+--image_root ./example_images/Bird_A \
 --image_ext JPG \
---out_dir ./result/retinanet_mixmatch/Bird_G_UAV_TestTrain \
+--out_dir ./result/retinanet_mixmatch/Bird_A \
 ```
 
 The description of each command are as follows:
