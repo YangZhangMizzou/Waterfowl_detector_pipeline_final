@@ -141,7 +141,7 @@ Each txt file under detection_results file contains detected bounding boxes in t
 Sorted in confidence descending order.
 ```
 When the user chooses to detect waterfowl, the visualization of the result should look like this. We use rectangle to mark each predictions
-
+![DJI_0040](https://github.com/user-attachments/assets/0e6905a4-d9fd-4186-aceb-ad9eda5850d4)
 
 
 
