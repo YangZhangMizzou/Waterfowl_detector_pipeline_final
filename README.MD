@@ -128,20 +128,7 @@ The description of each command are as follows:
 ``
 ## Output format
 When you specify the output dir, you shall expecting the output in the following:
-```
-Result folder 
-├── detection-results
-│   ├── image_name1.txt
-│   ├── image_name2.txt
-│   ├── image_name3.txt
-│   └── ...
-├── visualize-results
-│   ├── image_name1.jpg
-│   ├── image_name2.jpg
-│   ├── image_name3.jpg
-│   └── ...
-├── configs.json
-├── detection_summary.csv
+
 ```
 detection_summary contains three types of data:
 Description data includes input info of the image such as image_name, date, altitude.
