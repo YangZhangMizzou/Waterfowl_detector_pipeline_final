@@ -658,50 +658,6 @@ if __name__ == '__main__':
             
         print('finsh predicting classes!')
 
-    if (args.evaluate):
-        if_cate = True
-        if args.cla_model == '':
-            if_cate = False
-        precision, recall, sum_AP, mrec, mprec, area = mAp_calculate(image_name_list = image_name_list, 
-                                                                    gt_txt_list=[os.path.splitext(i)[0]+'.txt' for i in image_list],
-                                                                    pred_txt_list = [os.path.join(text_out_dir,i.replace(args.image_ext,'txt')) for i in image_name_list],
-                                                                    iou_thresh=0.3, 
-                                                                    )
-
-        best_conf_thresh = plot_f1_score(precision, recall, 'general', text_out_dir, area, 'f1_score', color='r')
-        plt.legend()
-        plt.savefig(os.path.join(target_dir,'f1_score.jpg'))
-        plt.figure()
-        plot_mAp(precision, recall, mprec, mrec,  'general', area, 'mAp', color='r')
-        plt.legend()
-        plt.savefig(os.path.join(target_dir,'mAp.jpg'))
-        print('Evaluation completed, proceed to wrap result')
-
-        conf_thresh_dict = {
-            'yolo':0.3,
-            'retinanet':0.5,
-            'retinanetknn':0.2,
-            'faster':0.5,
-        }
-
-        # conf_thresh = conf_thresh_dict[args.det_model]
-
-        record,precision,recall,f1_score,cate_precision,cate_recall,cate_f1_score,count_error = compare_draw(record,text_out_dir,args.image_root,args.image_ext,best_conf_thresh,0.3,if_cate)
-        log = open(os.path.join(target_dir,'overall_performance.txt'),'w')
-        log.write('The overall performance on all images is')
-        log.write('\nThe precision will be'+str(precision))
-        log.write('\nThe recall will be '+str(recall))
-        log.write('\nThe f1 score will be '+str(f1_score))
-        log.write('\nThe cate_precision will be'+str(cate_precision))
-        log.write('\nThe cate_recall will be '+str(cate_recall))
-        log.write('\nThe cate_f1 score will be '+str(cate_f1_score))
-        log.write('\nThe count_error will be '+str(count_error))
-
-        record = pd.DataFrame(record)
-        record.to_csv(csv_out_dir,header = ['image_name','date','location','altitude','latitude_meta','longitude_meta','altitude_meta','time_spent(sec)','pred_num_birds','gt_num_birds','tp','fp','fn','precision','recall','f1-score','count_error'],index = True)
-
-        print('Complete image drawing!')
-
     argparse_dict = vars(args)
 
     with open(os.path.join(target_dir,'configs.json'),'w') as f:
