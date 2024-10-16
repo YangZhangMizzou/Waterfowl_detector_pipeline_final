@@ -142,7 +142,7 @@ Result folder
 │   └── ...
 ├── configs.json
 ├── detection_summary.csv
-
+```
 detection_summary contains three types of data:
 Description data includes input info of the image such as image_name, date, altitude.
 Metadata includes metadata read from the image metadata (if applicable).
