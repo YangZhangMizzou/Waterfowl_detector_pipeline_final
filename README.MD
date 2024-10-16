@@ -92,22 +92,6 @@ pip install tensorboardX
 pip install progress
 ```
 
-## input format
-This script requires a speical format of input describes below
-```
-Image_folder (eg Bird_A)
-├── image_name1.jpg
-├── image_name1.txt # if want to evaluate
-├── image_name1.txt # if want to evaluate on classificaiton
-└── ...
-```
-## Run all experiments:
-You can easily run all experiments on the drone_collection dataset (all heights, habitats, datasets) with a single command. Please follow the procedures carefully:
-
-1. Download [example_images.zip](https://drive.google.com/file/d/1GpPj6GQl_-oaCb7y-YwId4sUjyLDvipQ/view?usp=sharing) and then extract all subfolders to **example_images** folder. 
-2. Download [checkpoints.zip](https://drive.google.com/file/d/1gCochdduiTb7sxrAkGTR-DS_YZTEmbLi/view?usp=drive_link) and then extract all subfolders to **checkpoint** folder 
-3. change directory to Waterfowl_detector_pipeline and run your customized commands(The inference may take a long time. Please be patient).
-
 ## Run the Scripts:
 Once you have the input file ready and the correct virtual environment set up, you can use the file inference_image_height.py to start inferring the images. Here's a quick example of the full command:
 
@@ -117,10 +101,8 @@ python inference_image_height.py \
 --image_root ./example_images/Bird_G_UAV_TestTrain \
 --image_ext JPG \
 --out_dir ./result/retinanet/Bird_G_UAV_TestTrain \
---evaluate True \
 
 ```
-
 
 if you want to run waterfowl dectection and classification together:
 
@@ -131,7 +113,6 @@ python inference_image_height.py \
 --image_root ./example_images/Bird_G_UAV_TestTrain \
 --image_ext JPG \
 --out_dir ./result/retinanet_mixmatch/Bird_G_UAV_TestTrain \
---evaluate True \
 ```
 
 The description of each command are as follows:
@@ -144,8 +125,7 @@ The description of each command are as follows:
 --image_location: where the image is taken; this will be stored as description data.
 --csv_root: The root dir where image info is stored.
 --out_dir: where the output file will be generated. By default, it will create a 'Result' folder under the current directory.
---evaluate: whether we want to evaluate the result. This can only be done when the input file comes with a groundTruth file; default is false.
-```
+``
 ## Output format
 When you specify the output dir, you shall expecting the output in the following:
 ```
@@ -162,8 +142,6 @@ Result folder
 │   └── ...
 ├── configs.json
 ├── detection_summary.csv
-├── f1_score.jpg    #if apply evaluation
-└── mAP.jpg         #if apply evaluation
 
 detection_summary contains three types of data:
 Description data includes input info of the image such as image_name, date, altitude.
@@ -177,12 +155,6 @@ Sorted in confidence descending order.
 ```
 When the user chooses to detect waterfowl only, the visualization of the result should look like this. Rectangles represent TP (True Positive), triangles represent FP (False Positive), and ovals represent FN (False Negative).
 ![I_DJI_0261](https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final/assets/47132186/65b4ada5-ddce-483b-814e-e7c0d4473ffe)
-
-When the user chooses to detect and classify waterfowl, the visualization of the result should look like this. Blue rectangles represent TP with correct class prediction, while green represent TP with incorrect class prediction
-![DJI_0055](https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final/assets/47132186/c5d5778b-369b-4071-a3e3-a6c41ff36cdb)
-
-We generate confusion matrix to illustrate accuracy across different classes
-![confusion_matrix](https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final/assets/47132186/c68eab59-9c74-4a9a-b641-736cee1aed25)
 
 
 
