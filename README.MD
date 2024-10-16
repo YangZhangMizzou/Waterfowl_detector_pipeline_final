@@ -1,6 +1,6 @@
 # Waterfowl Detector Pipeline Instructions
 
-This code implements local waterfowl detectors (RetinaNet, YOLOv5, FasterRCNN, and YoloNAS) and waterfowl classifiers (Res18 and MixMatch) which are pretrained by waterfowl datasets collected by Missouri Department of Conservation and University of Missouri,Columbia
+This code implements local waterfowl detectors (RetinaNet, YOLOv5, FasterRCNN, and YoloNAS) and waterfowl classifiers (Res18 and MixMatch) which are pretrained by waterfowl datasets collected by Missouri Department of Conservation and University of Missouri,Columbia.
 
 ## System requirements
 Support is available for the Linux Ubuntu system and Windows system, It has been tested in Ubuntu 18, 20.4 and windows 10 and 11.
