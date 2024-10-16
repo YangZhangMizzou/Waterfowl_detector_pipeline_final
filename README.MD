@@ -15,8 +15,6 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 This software support cuda to accelerate inference speed. CUDA installation is recommended. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.This software has been tested working with cuda 11.2 and 10.0
 
-https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
-
 ### Clone the repository
 Git should be firstly installed to download the code to local. You can follow [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git to your operating system.
 You can use the command line to clone the repository:
