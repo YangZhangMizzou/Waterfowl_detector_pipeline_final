@@ -140,8 +140,10 @@ Each txt file under detection_results file contains detected bounding boxes in t
   category, confidence score, x1, y1, x2, y2
 Sorted in confidence descending order.
 ```
-When the user chooses to detect waterfowl only, the visualization of the result should look like this. Rectangles represent TP (True Positive), triangles represent FP (False Positive), and ovals represent FN (False Negative).
-![I_DJI_0261](https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final/assets/47132186/65b4ada5-ddce-483b-814e-e7c0d4473ffe)
+When the user chooses to detect waterfowl, the visualization of the result should look like this. We use rectangle to mark each predictions
+
+
+
 
 
 
