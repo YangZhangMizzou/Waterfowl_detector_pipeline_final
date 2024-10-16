@@ -123,9 +123,6 @@ The description of each command are as follows:
 --image_location: where the image is taken; this will be stored as description data.
 --csv_root: The root dir where image info is stored.
 --out_dir: where the output file will be generated. By default, it will create a 'Result' folder under the current directory.
-``
-## Output format
-When you specify the output dir, you shall expecting the output in the following:
 
 ```
 detection_summary contains three types of data:
