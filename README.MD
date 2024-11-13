@@ -128,7 +128,7 @@ The description of each parameters are as follows:
 ## Inference output
 When you specify the **output_dir** when running **inference_image_height.py**, you shall expecting the output in the following:
 ```
-Result folder 
+Output folder 
 ├── detection-results
 │   ├── image_name1.txt
 │   ├── image_name2.txt
@@ -139,19 +139,11 @@ Result folder
 │   ├── image_name2.jpg
 │   ├── image_name3.jpg
 │   └── ...
-├── configs.json
-├── detection_summary.csv
-├── f1_score.jpg    #if apply evaluation
-└── mAP.jpg         #if apply evaluation
+└── detection_summary.csv 
 
-detection_summary contains three types of data:
-Description data includes input info of the image info such as image_name, date,altitude
-Meta data includes meta data read from the image Meta data(if appliable)
-Sample results are shown below:
-Detection data: includes num of birds detected and time spent inferencing that image(include visualization)
-
-When the user chooses to detect waterfowl, the visualization of the result should look like this. We use rectangle to mark each predictions
-![DJI_0040](https://github.com/user-attachments/assets/0e6905a4-d9fd-4186-aceb-ad9eda5850d4)
+detection_summary.csv contain image information and image inference result summary of all images.
+**Image Information**: Includes details such as image_name, image_altitude, and other metadata extracted from the images.
+**Inference Results**: Provides the number of detected birds and the inference time for each image
 
 
 
