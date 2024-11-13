@@ -11,7 +11,7 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 ## Installation
 
-### 1.Install CUDA
+### 1.Install CUDA(Recommended)
 
 This software supports CUDA to accelerate inference speed. You can follow the instructions [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to customize your CUDA installation. This software has been tested and confirmed to work with all version of cuda 10 and 11. If you choose not to install CUDA, this software can work with cpu at a slow inference speed.
 
