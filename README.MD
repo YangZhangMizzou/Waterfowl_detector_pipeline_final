@@ -143,6 +143,7 @@ Output folder
 ```
 
 **detection_summary.csv** contain image information and image inference result summary of all images. **Image Information** includes details such as image_name, image_altitude, and other metadata extracted from the images. **Inference Results** provides the number of detected birds and the inference time for each image
+![199340134-13dc5f02-4980-4bac-9a6a-4a5d6a04050e](https://github.com/user-attachments/assets/3f9bd18c-58aa-4617-abe5-e077f5ff1910)
 
 Each **image_name.txt** file in the detection-results folder contains the coordinates of all predicted bounding boxes (bboxes) for that image. Each bbox is represented by five values: inference confidence, x and y coordinates of the bbox's top-left point, and the bbox's width and height. If you choose to run the waterfowl classifier, an additional value indicating the bird category will be included for each bbox.
 
