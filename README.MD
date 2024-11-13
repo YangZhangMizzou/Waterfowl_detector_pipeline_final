@@ -147,8 +147,7 @@ Output folder
 Each **image_name.txt** file in the detection-results folder contains the coordinates of all predicted bounding boxes (bboxes) for that image. Each bbox is represented by five values: inference confidence, x and y coordinates of the bbox's top-left point, and the bbox's width and height. If you choose to run the waterfowl classifier, an additional value indicating the bird category will be included for each bbox.
 
 Each **image_name.jpg** file in the visualize-results provides a visualization of all predicted bounding boxes. Predicted birds detected by the waterfowl detector are marked with green bounding boxes. If you choose to run the classifier, the waterfowl species name will be displayed near each green bounding box.
-
-![DJI_0012](https://github.com/user-attachments/assets/b830e9c1-06d7-44f5-994f-62c4680278d5)
+![20241113004900](https://github.com/user-attachments/assets/b033de5f-43c1-47ad-8c0e-ff39d0ac85cd)
 
 
 
