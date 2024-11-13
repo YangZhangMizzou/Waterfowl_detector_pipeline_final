@@ -92,7 +92,7 @@ pip install progress
 ```
 
 ## Run the Scripts
-Once you have prepared the input file and set up the correct virtual environment, you can use </ins>inference_image_height.py</ins>  to start the image inference process.
+Once you have prepared the input file and set up the correct virtual environment, you can use **inference_image_height.py**  to start the image inference process.
 
 If you want run waterfowl detection on images only:
 ```
@@ -126,7 +126,7 @@ The description of each parameters are as follows:
 ```
 
 ## Inference output
-When you specify the <ins>output_dir</ins> when running </ins>inference_image_height.py</ins>, you shall expecting the output in the following:
+When you specify the **output_dir** when running **inference_image_height.py**, you shall expecting the output in the following:
 ```
 Result folder 
 ├── detection-results
