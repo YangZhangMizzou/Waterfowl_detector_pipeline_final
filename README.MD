@@ -24,7 +24,7 @@ git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.g
 
 ### Install Anaconda and Create virtual environment
 
-Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/).After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
+Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/). After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
 
 ```
 conda create -n torch_py3 python==3.8
@@ -32,14 +32,11 @@ conda activate torch_py3
 cd Waterfowl_detector_pipeline_final
 ```
 
-
 ### Install pytorch
-
 We recommend installing PyTorch with CUDA to accelerate running speed:
 ```
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
-
 You can also install PyTorch without CUDA. In this case, the software will run with cpu:
 ```
 pip install torch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0
