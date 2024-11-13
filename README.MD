@@ -13,7 +13,7 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 ### Install CUDA
 
-This software support cuda to accelerate inference speed. CUDA installation is recommended. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.This software has been tested working with cuda 11.3 and 10.1. More version of CUDA should also be supported.
+This software support cuda to accelerate inference speed. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.This software has been tested working with cuda 11.3 and 10.1.
 
 ### Clone the repository
 Git should be firstly installed to download the code to local. You can follow [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git to your operating system.
@@ -24,7 +24,7 @@ git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.g
 
 ### Install Anaconda
 
-Anaconda is recommended to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/)
+Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/)
 
 ### Create virtual environment
 Using a virtual environment is recommended for installing the package. Anaconda is recommended for this purpose. After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
@@ -42,6 +42,12 @@ We recommend installing PyTorch with CUDA to accelerate running speed:
 ```
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
+
+You can also install PyTorch without CUDA. In this case, the software will run with cpu:
+```
+pip install torch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0
+```
+
 ### Install basic dependency
 
 ```
@@ -62,7 +68,6 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 
 ### Install dependency for YOLOV5
 
-Just run this command and all set for YOLOV5
 ```
 pip install -r requirements.txt
 ```
@@ -91,19 +96,18 @@ pip install progress
 ```
 
 ## Run the Scripts:
-Once you have the input file ready and the correct virtual environment set up, you can use the file inference_image_height.py to start inferring the images. Here's a quick example of the full command:
+Once you have the input file ready and the correct virtual environment set up, you can use the file inference_image_height.py to start inferring the images. 
 
+If you want run waterfowl detection on images only:
 ```
 python inference_image_height.py \
 --det_model retinanet \
 --image_root ./example_images/Bird_A \
 --image_ext JPG \
 --out_dir ./result/retinanet/Bird_A \
-
 ```
 
-if you want to run waterfowl dectection and classification together:
-
+if you want to run waterfowl dectection and classification on images:
 ```
 python inference_image_height.py \
 --det_model retinanet \
@@ -113,7 +117,7 @@ python inference_image_height.py \
 --out_dir ./result/retinanet_mixmatch/Bird_A \
 ```
 
-The description of each command are as follows:
+The description of each parameters are as follows:
 ```
 --det_model: name of the detection model. You can select from yolo5, fasterrcnn, retinanetknn, retinanet, megadetector, and yolonas.
 --cla_model: name of the classification model. You can select from res18 and mixmatch.
@@ -123,8 +127,8 @@ The description of each command are as follows:
 --image_location: where the image is taken; this will be stored as description data.
 --csv_root: The root dir where image info is stored.
 --out_dir: where the output file will be generated. By default, it will create a 'Result' folder under the current directory.
-
 ```
+
 detection_summary contains three types of data:
 Description data includes input info of the image such as image_name, date, altitude.
 Metadata includes metadata read from the image metadata (if applicable).
