@@ -22,12 +22,9 @@ You can use the command line to clone the repository:
 git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.git
 ```
 
-### Install Anaconda
+### Install Anaconda and Create virtual environment
 
-Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/)
-
-### Create virtual environment
-Using a virtual environment is recommended for installing the package. Anaconda is recommended for this purpose. After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
+Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/).After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
 
 ```
 conda create -n torch_py3 python==3.8
