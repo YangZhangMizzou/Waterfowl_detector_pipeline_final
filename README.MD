@@ -11,11 +11,11 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 ## Installation
 
-### Install CUDA
+### 1.Install CUDA
 
-This software supports CUDA to accelerate inference speed. You can follow the instructions [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to customize your CUDA installation. This software has been tested and confirmed to work with CUDA versions 11.3 and 10.1.
+This software supports CUDA to accelerate inference speed. You can follow the instructions [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to customize your CUDA installation. This software has been tested and confirmed to work with all version of cuda 10 and 11. If you choose not to install CUDA, this software can work with cpu at a slow inference speed.
 
-### Clone the repository
+### 2.Clone the repository
 
 Git must be installed first to download the code locally. You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git on your operating system. Once installed, you can use the command line to clone the repository
 
@@ -24,9 +24,9 @@ You can use the command line to clone the repository:
 git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.git
 ```
 
-### Install Anaconda and Create virtual environment
+### 3.Install Anaconda and Create virtual environment
 
-Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/). After installing Anaconda, refer to this guide to create your virtual environment. It's recommended to create the environment with Python 3.8:
+Anaconda is used to create virtual environment for this software. Guideline for installation on windows and Ubuntu can be found [here](https://docs.anaconda.com/anaconda/install/linux/). After installing Anaconda, refer to this guide to create your virtual environment. It is recommended to create the environment using Python 3.8, as this is the version used during the software’s development.
 
 ```
 conda create -n torch_py3 python==3.8
@@ -34,7 +34,7 @@ conda activate torch_py3
 cd Waterfowl_detector_pipeline_final
 ```
 
-### Install pytorch
+### 4.Install pytorch
 We recommend installing PyTorch with CUDA to accelerate running speed by using GPU resource:
 ```
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
@@ -44,7 +44,7 @@ You can also install PyTorch without CUDA. In this case, the software will run w
 pip install torch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0
 ```
 
-### Install basic dependency
+### 5.Install basic dependency
 
 ```
 pip install pandas
@@ -56,19 +56,19 @@ pip install resnet_pytorch
 pip install scikit-learn
 ```
 
-### Install dependency for FasterRCNN
+### 6.Install dependency for FasterRCNN
 
 ```
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 
-### Install dependency for YOLOV5
+### 7.Install dependency for YOLOV5
 
 ```
 pip install -r requirements.txt
 ```
 
-### Install dependency for Retinanet
+### 8.Install dependency for Retinanet
 
 ```
 pip install opencv-contrib-python
@@ -82,7 +82,7 @@ pip install cycler
 ```
 
 
-### Install dependency for YoloNAS and MixMatch
+### 9.Install dependency for YoloNAS and MixMatch
 
 ```
 pip install super-gradients==3.1.3
@@ -92,7 +92,7 @@ pip install progress
 ```
 
 ## Run the Scripts
-Once you have prepared the input file and set up the correct virtual environment, you can use **inference_image_height.py**  to start the image inference process.
+Once you have prepared the input file and finish installing all dependency, you can use **inference_image_height.py**  to start the image inference process.
 
 If you want run waterfowl detection on images only:
 ```
