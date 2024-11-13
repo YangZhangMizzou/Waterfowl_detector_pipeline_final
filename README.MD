@@ -13,10 +13,12 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 ### Install CUDA
 
-This software support cuda to accelerate inference speed. You can following [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to custmize your cuda installation.This software has been tested working with cuda 11.3 and 10.1.
+This software supports CUDA to accelerate inference speed. You can follow the instructions [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to customize your CUDA installation. This software has been tested and confirmed to work with CUDA versions 11.3 and 10.1.
 
 ### Clone the repository
-Git should be firstly installed to download the code to local. You can follow [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git to your operating system.
+
+Git must be installed first to download the code locally. You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git on your operating system. Once installed, you can use the command line to clone the repository
+
 You can use the command line to clone the repository:
 ```
 git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.git
@@ -89,8 +91,8 @@ pip install tensorboardX
 pip install progress
 ```
 
-## Run the Scripts:
-Once you have the input file ready and the correct virtual environment set up, you can use the file inference_image_height.py to start inferring the images. 
+## Run the Scripts
+Once you have prepared the input file and set up the correct virtual environment, you can use </ins>inference_image_height.py</ins>  to start the image inference process.
 
 If you want run waterfowl detection on images only:
 ```
@@ -123,15 +125,30 @@ The description of each parameters are as follows:
 --out_dir: where the output file will be generated. By default, it will create a 'Result' folder under the current directory.
 ```
 
-detection_summary contains three types of data:
-Description data includes input info of the image such as image_name, date, altitude.
-Metadata includes metadata read from the image metadata (if applicable).
-Sample results are shown below:
-Detection data: includes the number of birds detected and time spent inferring that image (including visualization).
+## Inference output
+When you specify the <ins>output_dir</ins> when running </ins>inference_image_height.py</ins>, you shall expecting the output in the following:
+```
+Result folder 
+├── detection-results
+│   ├── image_name1.txt
+│   ├── image_name2.txt
+│   ├── image_name3.txt
+│   └── ...
+├── visualize-results
+│   ├── image_name1.jpg
+│   ├── image_name2.jpg
+│   ├── image_name3.jpg
+│   └── ...
+├── configs.json
+├── detection_summary.csv
+├── f1_score.jpg    #if apply evaluation
+└── mAP.jpg         #if apply evaluation
 
-Each txt file under detection_results file contains detected bounding boxes in the following format:
-  category, confidence score, x1, y1, x2, y2
-Sorted in confidence descending order.
+detection_summary contains three types of data:
+Description data includes input info of the image info such as image_name, date,altitude
+Meta data includes meta data read from the image Meta data(if appliable)
+Sample results are shown below:
+Detection data: includes num of birds detected and time spent inferencing that image(include visualization)
 
 When the user chooses to detect waterfowl, the visualization of the result should look like this. We use rectangle to mark each predictions
 ![DJI_0040](https://github.com/user-attachments/assets/0e6905a4-d9fd-4186-aceb-ad9eda5850d4)
