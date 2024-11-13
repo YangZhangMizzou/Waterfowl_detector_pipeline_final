@@ -11,11 +11,7 @@ All Example images can be downloaded from [example_images.zip](https://drive.goo
 
 ## Installation
 
-### 1.Install CUDA (Recommended)
-
-This software supports CUDA to accelerate inference speed. You can follow the instructions [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to customize your CUDA installation. This software has been tested and confirme d to work with all version of cuda 10 and 11. If you choose not to install CUDA, this software can work with cpu at a slow inference speed.
-
-### 2.Clone the repository
+### 1.Clone the repository
 
 Git must be installed first to download the code locally. You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git on your operating system. Once installed, you can use the command line to clone the repository
 
@@ -23,6 +19,11 @@ You can use the command line to clone the repository:
 ```
 git clone https://github.com/YangZhangMizzou/Waterfowl_detector_pipeline_final.git
 ```
+
+### 2.Install CUDA (Recommended)
+
+This software supports CUDA to accelerate inference speed. You can follow the instructions [here](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) to customize your CUDA installation. This software has been tested and confirme d to work with all version of cuda 10 and 11. If you choose not to install CUDA, this software can work with cpu at a slow inference speed.
+
 
 ### 3.Install Anaconda and Create virtual environment
 
