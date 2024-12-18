@@ -38,7 +38,7 @@ cd Waterfowl_detector_pipeline_final
 ### 4.Install pytorch
 We recommend installing PyTorch with CUDA to accelerate running speed by using GPU resource:
 ```
-conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit==11.3 -c pytorch -c conda-forge
 ```
 You can also install PyTorch without CUDA. In this case, the software will run with cpu resource:
 ```
