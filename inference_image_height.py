@@ -17,8 +17,6 @@ import shutil
 from tools.tools import py_cpu_nms,get_sub_image,filter_small_fp
 from tools.mAP_cal import mAp_calculate,plot_f1_score,plot_mAp
 from tools.compare_and_draw import compare_draw
-from classifiers.res18.classification_infernece_res18 import res18_classifier_inference
-from classifiers.MixMatch.mixmatch_classification import mixmatch_classifier_inference
 
 #re18 and mixmatch
 
@@ -648,10 +646,12 @@ if __name__ == '__main__':
 
     if (args.cla_model != ''):
         if args.cla_model== 'mixmatch':
+            from classifiers.MixMatch.mixmatch_classification import mixmatch_classifier_inference
             model_dir = os.path.join('checkpoint','classifier','mixmatch_nojitter','model_best.pth.tar')
             mixmatch_classifier_inference(model_dir,image_list,text_out_dir,device) 
 
         elif args.cla_model=='res18':
+            from classifiers.res18.classification_infernece_res18 import res18_classifier_inference
             model_dir = os.path.join('checkpoint','classifier','Res18_Bird_I','model.pth')
             category_index_dir = model_dir.replace('model.pth','category_index.json')
             res18_classifier_inference(model_dir,category_index_dir,image_list,text_out_dir,device)
