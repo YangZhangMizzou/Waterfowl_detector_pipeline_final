@@ -31,7 +31,7 @@ def get_args():
                         default = './results')
     parser.add_argument('--visualize',type = bool,
                         help = 'whether to have visualization stored to result, default is True',
-                        default = False)
+                        default = True)
     args = parser.parse_args()
     
     #if the image_root input is with extension(*.JPG) wrap into list
