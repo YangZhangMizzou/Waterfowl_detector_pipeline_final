@@ -1,17 +1,6 @@
 
 # Usage: pip install -r requirements.txt
 
-# basic dependency
-pandas>=1.1.4
-numpy>=1.18.5
-opencv-python>=4.1.1
-tqdm>=4.64.0
-efficientnet_pytorch
-resnet_pytorch
-scikit-learn
-Pillow==9.5
-matplotlib>=3.2.2
-
 # YOLOv5 requirements
 PyYAML>=5.3.1
 requests>=2.23.0
@@ -19,16 +8,4 @@ scipy>=1.4.1
 protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 seaborn>=0.11.0
 
-# RetinaNet requirements
-opencv-contrib-python
-pyexiv2
--i https://test.pypi.org/simple/ WaterFowlTools
-packaging
-kiwisolver
-cycler
-
-# yolonas
-super-gradients==3.1.0
-setuptools==59.5.0
-progress
 
