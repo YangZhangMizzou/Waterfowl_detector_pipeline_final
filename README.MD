@@ -9,6 +9,22 @@ Support is available for the Linux Ubuntu system and Windows system, It has been
 
 All Example images can be downloaded from [example_images.zip](https://drive.google.com/file/d/1GpPj6GQl_-oaCb7y-YwId4sUjyLDvipQ/view?usp=sharing). Download and  extract all subfolders to **example_images** folder. 
 
+After you download and unzip all example_images, the data structure of individual dataset should be shown like this
+
+Bird Dataset 
+├── image_name1.txt
+├── image_name2.txt
+├── image_name3.txt
+└── ...
+├── image_name1.JPG
+├── image_name2.JPG
+├── image_name3.JPG
+└── ...
+└── image_info.csv 
+```
+
+If you want to infer your own waterfowl aerial images, please make sure to add your own image_info.csv file. This file should includes at least two columns, image_name and height.
+
 ## Installation
 
 ### 1.Clone the repository
