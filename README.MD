@@ -118,7 +118,7 @@ python inference_image_height.py \
 --det_model retinanet \
 --image_root ./example_images/datasets/Bird_G_UAV_TestTrain \
 --image_ext JPG \
---csv_root ./example_images/Bird_G_UAV_TestTrain/image_info.csv \
+--csv_root ./example_images/datasets/Bird_G_UAV_TestTrain/image_info.csv \
 --out_dir ./result/retinanet/Bird_G_UAV_TestTrain \
 ```
 
@@ -129,7 +129,7 @@ python inference_image_height.py \
 --cla_model mixmatch \
 --image_root ./example_images/datasets/Bird_G_UAV_TestTrain \
 --image_ext JPG \
---csv_root ./example_images/Bird_G_UAV_TestTrain/image_info.csv \
+--csv_root ./example_images/datasets/Bird_G_UAV_TestTrain/image_info.csv \
 --out_dir ./result/retinanet_mixmatch/Bird_G_UAV_TestTrain \
 ```
 
