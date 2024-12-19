@@ -26,6 +26,10 @@ Bird Dataset
 
 If you want to infer your own waterfowl aerial images, please make sure to add your own image_info.csv file. This file should includes at least two columns, image_name and height.
 
+## Pretrained weigt
+
+You should also download training weight [here](https://drive.google.com/file/d/1gCochdduiTb7sxrAkGTR-DS_YZTEmbLi/view?usp=sharing) and unzip them to checkpoint folder.
+
 ## Installation
 
 ### 1.Clone the repository
