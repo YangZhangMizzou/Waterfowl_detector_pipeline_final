@@ -116,9 +116,9 @@ If you want run waterfowl detection on images only:
 ```
 python inference_image_height.py \
 --det_model retinanet \
---image_root ./example_images/Bird_A \
+--image_root ./example_images/Bird_G_UAV_TestTrain \
 --image_ext JPG \
---out_dir ./result/retinanet/Bird_A \
+--out_dir ./result/retinanet/Bird_G_UAV_TestTrain \
 ```
 
 if you want to run waterfowl dectection and classification on images:
@@ -126,9 +126,9 @@ if you want to run waterfowl dectection and classification on images:
 python inference_image_height.py \
 --det_model retinanet \
 --cla_model mixmatch \
---image_root ./example_images/Bird_A \
+--image_root ./example_images/Bird_G_UAV_TestTrain \
 --image_ext JPG \
---out_dir ./result/retinanet_mixmatch/Bird_A \
+--out_dir ./result/retinanet_mixmatch/Bird_G_UAV_TestTrain \
 ```
 
 The description of each parameters are as follows:
