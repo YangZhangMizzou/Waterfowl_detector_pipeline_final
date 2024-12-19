@@ -14,9 +14,9 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 import shutil
 
-from tools.tools import py_cpu_nms,get_sub_image,filter_small_fp
-from tools.mAP_cal import mAp_calculate,plot_f1_score,plot_mAp
-from tools.compare_and_draw import compare_draw
+# from tools.tools import py_cpu_nms,get_sub_image,filter_small_fp
+# from tools.mAP_cal import mAp_calculate,plot_f1_score,plot_mAp
+# from tools.compare_and_draw import compare_draw
 
 #re18 and mixmatch
 
