@@ -135,7 +135,7 @@ python inference_image_height.py \
 
 The description of each parameters are as follows:
 ```
---det_model: name of the detection model. You can select from yolo5, fasterrcnn, retinanetknn, retinanet, megadetector, and yolonas.
+--det_model: name of the detection model. You can select from yolo5, fasterrcnn, retinanetknn, retinanet, and yolonas.
 --cla_model: name of the classification model. You can select from res18 and mixmatch.
 --image_root: specify where the input images are stored.
 --image_ext: image extension of the target images, default is 'JPG'.
