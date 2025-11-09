@@ -118,12 +118,12 @@ Once you have prepared the input file and finish installing all dependency, you 
 
 If you want run waterfowl detection on images only:
 ```
-python inference_image_height.py --det_model fasterrcnn --image_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification --image_ext jpg --csv_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification/image_info.csv --out_dir ./result/retinanet/Bird_I_Waterfowl_SpeciesClassification
+python inference_image_height.py --det_model fasterrcnn --image_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification --image_ext jpg --csv_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification/image_info.csv --out_dir ./result/Bird_I_Waterfowl_SpeciesClassification
 ```
 
 if you want to run waterfowl dectection and classification on images:
 ```
-python inference_image_height.py --det_model fasterrcnn --cla_model mixmatch --image_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification --image_ext jpg --csv_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification/image_info.csv --out_dir ./result/retinanet_mixmatch/Bird_I_Waterfowl_SpeciesClassification
+python inference_image_height.py --det_model fasterrcnn --cla_model mixmatch --image_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification --image_ext jpg --csv_root ./example_images/datasets/Bird_I_Waterfowl_SpeciesClassification/image_info.csv --out_dir ./result/Bird_I_Waterfowl_SpeciesClassification
 ```
 
 The description of each parameters are as follows:
